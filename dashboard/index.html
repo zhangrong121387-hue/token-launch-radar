@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Token Launch Radar — pre-token protocols ranked by implied launch value</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="brand-mark" aria-hidden="true"></span>
+    <div>
+      <h1>Token Launch Radar</h1>
+      <p class="tagline">Protocols whose token does not exist yet, ranked by what the launch would be worth.</p>
+    </div>
+  </div>
+  <nav class="tabs" aria-label="Views">
+    <button type="button" data-tab="board" class="tab is-on">Board</button>
+    <button type="button" data-tab="live" class="tab">Live tokens</button>
+    <button type="button" data-tab="method" class="tab">Method</button>
+  </nav>
+</header>
+<main id="app" aria-busy="true">
+  <p class="loading">Sweeping the snapshot…</p>
+</main>
+<footer class="foot">
+  <span id="foot-note">Implied value is this model's claim from the snapshot's own figures, not a prediction that a token will be issued.</span>
+</footer>
+<script src="../data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
